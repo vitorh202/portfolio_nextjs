@@ -1,0 +1,57 @@
+.centered-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; /* Invisível inicialmente */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .centered-container.fade-in {
+    opacity: 1; /* Visível quando entra na tela */
+    transform: translate(-50%, -50%) scale(1); /* Comportamento padrão */
+  }
+  
+  .centered-container.fade-out {
+    opacity: 0; /* Invisível ao sair da tela */
+    transform: translate(-50%, -50%) scale(0.95); /* Pequeno "zoom out" ao desaparecer */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(48deg,rgba(207, 207, 255, 1) 0%, rgba(0, 136, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .socialicon {
+    width: 50px; /* Tamanho inicial da imagem */
+    height: auto;
+    filter: invert(100%);
+    transition: transform 0.3s ease, filter 0.3s ease; /* Suaviza o efeito de hover */
+  }
+  
+  .socialicon:hover {
+    transform: scale(1.1); /* Aumenta o tamanho no hover */
+    filter: invert(65%) sepia(80%) saturate(200%) hue-rotate(150deg);
+  }
