@@ -1,22 +1,31 @@
 .centered-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0; /* Invisível inicialmente */
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  
-  .centered-container.fade-in {
-    opacity: 1; /* Visível quando entra na tela */
-    transform: translate(-50%, -50%) scale(1); /* Comportamento padrão */
-  }
-  
-  .centered-container.fade-out {
-    opacity: 0; /* Invisível ao sair da tela */
-    transform: translate(-50%, -50%) scale(0.95); /* Pequeno "zoom out" ao desaparecer */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(20px); /* Começa um pouco abaixo */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  z-index: 1;
+  position: relative;
+}
+
+.centered-container.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* Suave subida ao aparecer */
+}
+
+.centered-container.fade-out {
+  opacity: 0;
+  transform: translateY(20px); /* Suave descida ao sumir */
+}
   
   p {
     font-size: 1.2rem;

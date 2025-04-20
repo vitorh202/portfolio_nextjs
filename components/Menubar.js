@@ -42,6 +42,7 @@ const Menubar = () => {
         <div className="menu-right">
           <button>Início</button>
           <button>Sobre</button>
+          <button>Tecnologias</button>
           <button>Projetos</button>
         </div>
       </nav>
