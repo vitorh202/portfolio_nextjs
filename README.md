@@ -1,3 +1,1 @@
-# portfolio_nextjs
-
-Projeto de portfolio criado usando nextJs
+Projeto de portifolio criado em NextJS usando Tailwind e JS. 
