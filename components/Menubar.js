@@ -1,26 +1,25 @@
-"use client"
+"use client";
 
 import locales from '@/locales';
 import { useLanguage } from '@/locales/LanguageContext';
-
 import React, { useState, useEffect } from 'react';
 import './styles/Menubar.css';
+import { Menu, X } from 'lucide-react'; // ícones bonitos e leves
 
 const sections = ['inicio', 'sobre', 'tecnologias', 'projetos'];
 
 const Menubar = () => {
-
   const { language, setLanguage } = useLanguage();
   const { menubar } = locales[language];
 
   const changeLanguage = (lang) => {
-  setLanguage(lang);
+    setLanguage(lang);
   };
-
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio, setAudio] = useState(null);
   const [activeSection, setActiveSection] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false); // mobile menu
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -61,6 +60,7 @@ const Menubar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setMenuOpen(false); // fecha o menu mobile quando clica
     }
   };
 
@@ -81,32 +81,40 @@ const Menubar = () => {
           />
         </button>
       </div>
-      <div className="menu-right">
-        <button
-          className={activeSection === 'inicio' ? 'active' : ''}
-          onClick={() => scrollToSection('inicio')}
-        >
-          {menubar.inicio}
-        </button>
-        <button
-          className={activeSection === 'sobre' ? 'active' : ''}
-          onClick={() => scrollToSection('sobre')}
-        >
-          {menubar.sobre}
-        </button>
-        <button
-          className={activeSection === 'tecnologias' ? 'active' : ''}
-          onClick={() => scrollToSection('tecnologias')}
-        >
-          {menubar.tecnologias}
-        </button>
-        <button
-          className={activeSection === 'projetos' ? 'active' : ''}
-          onClick={() => scrollToSection('projetos')}
-        >
-          {menubar.projetos}
+
+      {/* MENU HORIZONTAL - DESKTOP */}
+      <div className="menu-right desktop-menu">
+        {sections.map((id) => (
+          <button
+            key={id}
+            className={activeSection === id ? 'active' : ''}
+            onClick={() => scrollToSection(id)}
+          >
+            {menubar[id]}
+          </button>
+        ))}
+      </div>
+
+      {/* MENU HAMBURGUER - MOBILE */}
+      <div className="mobile-menu-button">
+        <button onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
+
+      {menuOpen && (
+        <div className="mobile-dropdown">
+          {sections.map((id) => (
+            <button
+              key={id}
+              className={activeSection === id ? 'active' : ''}
+              onClick={() => scrollToSection(id)}
+            >
+              {menubar[id]}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
