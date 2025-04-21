@@ -17,7 +17,6 @@ export default function Home() {
       <div id="inicio"><Begin /></div>
       <div id="sobre"><SobreMim /></div>
       <div id="tecnologias"><Tecnologias /></div>
-
       </LanguageProvider>
 
     </div>
