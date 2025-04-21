@@ -64,3 +64,8 @@
     transform: scale(1.1); /* Aumenta o tamanho no hover */
     filter: invert(65%) sepia(80%) saturate(200%) hue-rotate(150deg);
   }
+
+  .aviso{
+    width: 50px;
+    margin: 5px;
+  }

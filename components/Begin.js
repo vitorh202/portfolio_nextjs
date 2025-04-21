@@ -4,7 +4,15 @@ import './styles/inicio.css'
 
 import React, { useEffect, useState } from 'react';
 
+import locales from '@/locales';
+import { useLanguage } from '@/locales/LanguageContext';
+
+
 const Begin = () => {
+
+    const { language } = useLanguage();
+    const { begin } = locales[language];
+
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -31,11 +39,11 @@ const Begin = () => {
           <img
             src="/warning.png"
             alt="Aviso"
-            style={{ width: '2em', verticalAlign: 'middle' }}
+            className="aviso"
           />
-          Em desenvolvimento
+          {begin.aviso}
         </p>
-        <h1>Bem-vindo ao meu portfólio</h1>
+        <h1>{begin.titulo}</h1>
         <div className="social-buttons">
         <a href="https://www.linkedin.com/in/vitor-hugo-6aaa52245/" target="_blank" rel="noopener noreferrer">
           <img

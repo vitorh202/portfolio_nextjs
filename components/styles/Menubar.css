@@ -58,3 +58,17 @@
   button:hover {
     text-decoration: underline; 
   }
+
+  .menu-right button {
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .menu-right button.active {
+    color: #00BFFF; /* Azul claro */
+    font-weight: bold;
+  }
