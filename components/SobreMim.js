@@ -50,7 +50,7 @@ const SobreMim = () => {
         </div>
 
         {/* Informações */}
-        <div className={`text-left ${isVisible ? "fade-in-right" : "hidden"} mt-6 md:mt-0`}>
+        <div className={`text-center ${isVisible ? "fade-in-right" : "hidden"} mt-6 md:mt-0`}>
           <p className="text-lg mb-2">
             <strong>{sobre.nomeplace}</strong> <span className="ml-2">Vitor Hugo De Oliveira Almeida Cunha</span>
           </p>
