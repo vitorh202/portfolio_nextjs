@@ -33,3 +33,14 @@
   z-index: 0;
   pointer-events: none;
 }
+
+/* Fallback para mobile: esconde o vídeo e mostra uma imagem */
+@media (max-width: 768px) {
+  .background-container video {
+    display: none;
+  }
+
+  .background-container {
+    background-image: url('/background-fallback.jpg');
+  }
+}
