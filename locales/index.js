@@ -42,8 +42,8 @@ const locales = {
         {
           nome: "Donate Cripto",
           descricao: "Site para criação de campanhas e doações em criptomoedas, usando Solidity e NextJs.",
-          imagem: "/portfolio3d.png",
-          link: "https://portfolio3d.com"
+          imagem: "/cripto.png",
+          link: "https://crypto-donate-solidy.vercel.app/"
         }
       ]
     },
@@ -90,8 +90,8 @@ const locales = {
         {
           nome: "Donate Cripto",
           descricao: "Website for creating campaigns and donations in cryptocurrencies, using Solidity and NextJs.",
-          imagem: "/portfolio3d.png",
-          link: "https://portfolio3d.com"
+          imagem: "/cripto.png",
+          link: "https://crypto-donate-solidy.vercel.app/"
         }
       ]
     }
