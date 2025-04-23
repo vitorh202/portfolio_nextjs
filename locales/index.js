@@ -25,7 +25,27 @@ const locales = {
         back: 'Ferramentas de Back-End',
         ooo: 'Programação Orientada a Objetos',
       },
-      // outros componentes...
+      projetosTextoBotao: "Ver Projeto",
+      projetos: [
+        {
+          nome: "Lanche express",
+          descricao: "Um site com cardápio e facilitação de pedido via whatsapp, responsivo e com cardápio e lista de pedido dinâmica, feito em NextJs.",
+          imagem: "/Lanche.png",
+          link: "https://lanche-express-portifoil.vercel.app/"
+        },
+        {
+          nome: "SpellCircle",
+          descricao: "Um site com regras e galeria de cartas para um cardgame, feito em Vue.js.",
+          imagem: "/spell.png",
+          link: "https://spellcircle.vercel.app/"
+        },
+        {
+          nome: "Donate Cripto",
+          descricao: "Site para criação de campanhas e doações em criptomoedas, usando Solidity e NextJs.",
+          imagem: "/portfolio3d.png",
+          link: "https://portfolio3d.com"
+        }
+      ]
     },
     en: {
       menubar: {
@@ -53,7 +73,27 @@ const locales = {
         back: 'Back-End Tools',
         ooo: 'Object Oriented Programming',
       },
-      // outros componentes...
+      projetosTextoBotao: "View Project",
+      projetos: [
+        {
+          nome: "Lanche express",
+          descricao: "A responsive website with a menu and easy ordering via WhatsApp, with a dynamic menu and order list, made in NextJs.",
+          imagem: "/Lanche.png",
+          link: "https://lanche-express-portifoil.vercel.app/"
+        },
+        {
+          nome: "SpellCircle",
+          descricao: "A website with rules and card gallery for a cardgame, made in Vue.js.",
+          imagem: "/spell.png",
+          link: "https://spellcircle.vercel.app/"
+        },
+        {
+          nome: "Donate Cripto",
+          descricao: "Website for creating campaigns and donations in cryptocurrencies, using Solidity and NextJs.",
+          imagem: "/portfolio3d.png",
+          link: "https://portfolio3d.com"
+        }
+      ]
     }
   };
   

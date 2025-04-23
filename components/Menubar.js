@@ -60,7 +60,7 @@ const Menubar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setMenuOpen(false); // fecha o menu mobile quando clica
+      setMenuOpen(false); 
     }
   };
 
