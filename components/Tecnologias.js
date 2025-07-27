@@ -62,6 +62,7 @@ const Tecnologias = () => {
             <img src="/java.png" alt="JAVA" />
             <img src="/python.png" alt="PYTHON" />
             <img src="/csharp.png" alt="C#" />
+            <img src="/delphi" alt="Delphi" />
           </div>
         </div>
       </div>

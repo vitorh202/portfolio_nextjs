@@ -17,7 +17,7 @@ const locales = {
         localplace: 'Residência:',
         faculplace: 'Cursando:',
         idade: '25 anos',
-        facul: 'Ciências da Computação - 6º Período.',
+        facul: 'Ciências da Computação - 7º Período.',
       },
       tecs: {
         titulo: 'Tecnologias e linguagens de Programação:',
@@ -65,7 +65,7 @@ const locales = {
         localplace: 'Residence:',
         faculplace: 'Studying:',
         idade: '25 years old',
-        facul: 'Computer Science - 6th Period.',
+        facul: 'Computer Science - 7th Period.',
       },
       tecs: {
         titulo: 'Technologies and Programming Languages:',
