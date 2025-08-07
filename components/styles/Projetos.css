@@ -62,3 +62,47 @@
   .project-card:hover {
     transform: scale(1.05);
   }
+
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .arrow-btn {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #87c9ff;
+    transition: transform 0.2s;
+  }
+  
+  .arrow-btn:hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 1024px) {
+    .projects-container {
+      gap: 10px;
+    }
+    .project-card {
+      max-width: 250px;
+      flex: 0 0 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: row;
+      overflow-x: hidden; /* evita rolagem lateral */
+    }
+    .project-card {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+    .desktop-only {
+      display: none;
+    }
+  }

@@ -44,6 +44,12 @@ const locales = {
           descricao: "Site para criação de campanhas e doações em criptomoedas, usando Solidity e NextJs.",
           imagem: "/cripto.png",
           link: "https://crypto-donate-solidy.vercel.app/"
+        },
+        {
+          nome: "Missões Diarias",
+          descricao: "Aplicativo de gerenciamento de tarefas multiplataforma, desenvolvido com Delphi e integrado a uma API Node.js com banco CockroachDB. Conta com interface responsiva, edição dinâmica e sincronização em tempo real entre desktop e mobile.",
+          imagem: "/todolist.png",
+          link: "https://github.com/vitorh202/todolistDelphi12SQL"
         }
       ]
     },
@@ -92,6 +98,12 @@ const locales = {
           descricao: "Website for creating campaigns and donations in cryptocurrencies, using Solidity and NextJs.",
           imagem: "/cripto.png",
           link: "https://crypto-donate-solidy.vercel.app/"
+        },
+        {
+          nome: "Daily Quest",
+          descricao: "A cross-platform task management application developed with Delphi and integrated with a Node.js API and CockroachDB. It features a responsive interface, dynamic editing, and real-time synchronization between desktop and mobile.",
+          imagem: "/todolist.png",
+          link: "https://github.com/vitorh202/todolistDelphi12SQL"
         }
       ]
     }
