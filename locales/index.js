@@ -50,6 +50,12 @@ const locales = {
           descricao: "Aplicativo de gerenciamento de tarefas multiplataforma, desenvolvido com Delphi e integrado a uma API Node.js com banco CockroachDB. Conta com interface responsiva, edição dinâmica e sincronização em tempo real entre desktop e mobile.",
           imagem: "/todolist.png",
           link: "https://github.com/vitorh202/todolistDelphi12SQL"
+        },
+        {
+          nome: "Lista de Tarefas",
+          descricao: "Todolist feito em Nextjs, com configurações para temas, criação de tarefas para o dia, futuras e recorrentes, e armazenamento de tarefas em LocalStorage.",
+          imagem: "/todolistnextjs.png",
+          link: "https://vh-todolist.vercel.app/"
         }
       ]
     },
@@ -104,6 +110,12 @@ const locales = {
           descricao: "A cross-platform task management application developed with Delphi and integrated with a Node.js API and CockroachDB. It features a responsive interface, dynamic editing, and real-time synchronization between desktop and mobile.",
           imagem: "/todolist.png",
           link: "https://github.com/vitorh202/todolistDelphi12SQL"
+        },
+        {
+          nome: "Task List",
+          descricao: "Todolist made in Nextjs, with settings for themes, creation of daily, future and recurring tasks, and storage of tasks in LocalStorage.",
+          imagem: "/todolistnextjs.png",
+          link: "https://vh-todolist.vercel.app/"
         }
       ]
     }
