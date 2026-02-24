@@ -52,7 +52,7 @@ const Tecnologias = () => {
           <div className="icons">
             <img src="/SQL.png" alt="SQL" />
             <img src="/firebase.png" alt="FIREBASE" />
-            <img src="/ethereum.png" alt="ETHEREUM" />
+            <img src="/elephant.png" alt="ETHEREUM" />
           </div>
         </div>
   

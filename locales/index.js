@@ -28,6 +28,12 @@ const locales = {
       projetosTextoBotao: "Ver Projeto",
       projetos: [
         {
+          nome: "Acadex",
+          descricao: "Um site com o objetivo de apresentar Acadex, um sistema de gestão escolar desenvolvido por mim. O site é feito em NextJs e o projeto em asp.net.",
+          imagem: "/rel.webp",
+          link: "https://acadex-site.vercel.app/"
+        },
+        {
           nome: "Lanche express",
           descricao: "Um site com cardápio e facilitação de pedido via whatsapp, responsivo e com cardápio e lista de pedido dinâmica, feito em NextJs.",
           imagem: "/Lanche.png",
@@ -87,6 +93,12 @@ const locales = {
       },
       projetosTextoBotao: "View Project",
       projetos: [
+        {
+          nome: "Acadex",
+          descricao: "This website aims to showcase Acadex, a school management system I developed. The website is built using Next.js, and the project is in ASP.NET.",
+          imagem: "/rel.webp",
+          link: "https://acadex-site.vercel.app/"
+        },
         {
           nome: "Lanche express",
           descricao: "A responsive website with a menu and easy ordering via WhatsApp, with a dynamic menu and order list, made in NextJs.",
