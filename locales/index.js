@@ -16,7 +16,7 @@ const locales = {
         idadeplace: 'Idade:',
         localplace: 'Residência:',
         faculplace: 'Cursando:',
-        idade: '25 anos',
+        idade: '26 anos',
         facul: 'Ciências da Computação - 8º Período.',
       },
       tecs: {
@@ -82,7 +82,7 @@ const locales = {
         idadeplace: 'Age:',
         localplace: 'Residence:',
         faculplace: 'Studying:',
-        idade: '25 years old',
+        idade: '26 years old',
         facul: 'Computer Science - 8th Period.',
       },
       tecs: {
